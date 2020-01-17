@@ -2,11 +2,9 @@
 	nuxt
 </template>
 
-<style>
+<style lang="stylus">
+	@import '../assets/styles/main.styl';
 	html {
-		font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-		Roboto, 'Helvetica Neue', Arial, sans-serif;
-		font-size: 16px;
 		word-spacing: 1px;
 		-ms-text-size-adjust: 100%;
 		-webkit-text-size-adjust: 100%;
@@ -22,32 +20,23 @@
 		margin: 0;
 	}
 
-	.button--green {
-		display: inline-block;
-		border-radius: 4px;
-		border: 1px solid #3b8070;
-		color: #3b8070;
-		text-decoration: none;
-		padding: 10px 30px;
-	}
+	body
+		font-size fontBase
+		background #eee
+		color color__text
+		font-family: font__famaly;
 
-	.button--green:hover {
-		color: #fff;
-		background-color: #3b8070;
-	}
 
-	.button--grey {
-		display: inline-block;
-		border-radius: 4px;
-		border: 1px solid #35495e;
-		color: #35495e;
-		text-decoration: none;
-		padding: 10px 30px;
-		margin-left: 15px;
-	}
+	for i in 1..6
+		h{i}
+			margin 0 0 3 * gutter 0
 
-	.button--grey:hover {
-		color: #fff;
-		background-color: #35495e;
-	}
+	p
+		line-height 1.5
+		margin 0 0 2 * gutter 0
+
+
+	.form
+		form()
+
 </style>
