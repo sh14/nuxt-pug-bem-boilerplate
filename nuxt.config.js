@@ -1,4 +1,10 @@
+// global style(css) variable
+const gutter = 4
+
 module.exports = {
+  env:{
+    gutter: gutter,
+  },
   mode: 'universal',
   /*
   ** Headers of the page
@@ -59,14 +65,19 @@ module.exports = {
             }
           ]
         },
-        // {
-        //   test: /\.styl(us)?$/,
-        //   use: [
-        //     // 'vue-style-loader',
-        //     // 'css-loader',
-        //     'stylus-loader'
-        //   ]
-        // },
+        {
+          test: /\.styl(us)?$/,
+          use: [
+            {
+              loader: 'stylus-loader',
+              options: {
+                define:{
+                  gutter: gutter,
+                }
+              },
+            },
+          ]
+        },
       )
     }
   }
