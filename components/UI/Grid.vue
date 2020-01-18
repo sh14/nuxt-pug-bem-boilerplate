@@ -29,7 +29,7 @@
       },
       spacing: {
         type: Array,
-        default: [2],
+        default: ()=>[2],
       },
 
     },

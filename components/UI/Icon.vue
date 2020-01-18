@@ -46,11 +46,11 @@
       },
       spacing: {
         type: Array,
-        default: [],
+        default: ()=>[],
       },
       textSpacing: {
         type: Array,
-        default: [],
+        default: ()=>[],
       },
       stretch: {
         type: Boolean,
