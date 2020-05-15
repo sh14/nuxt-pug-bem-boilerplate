@@ -2,7 +2,7 @@
 const gutter = 4
 
 module.exports = {
-  env:{
+  env: {
     gutter: gutter,
   },
   mode: 'universal',
@@ -37,7 +37,10 @@ module.exports = {
   /*
   ** Nuxt.js dev-modules
   */
-  buildModules: [],
+  buildModules: [
+    // Simple usage
+    '@nuxtjs/vuetify',
+  ],
   /*
   ** Nuxt.js modules
   */
@@ -71,7 +74,7 @@ module.exports = {
             {
               loader: 'stylus-loader',
               options: {
-                define:{
+                define: {
                   gutter: gutter,
                 }
               },

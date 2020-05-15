@@ -1,6 +1,9 @@
 <template lang="pug">
 	include ../assets/bemto.pug
 	.page
+		v-card
+			v-card-text
+				div  Use Material design!
 		+b.main
 			+e.box
 				+e.container
